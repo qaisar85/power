@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  php-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Build PHP CLI image
+        run: |
+          docker build -t wop-php-cli -f docker/php-cli/Dockerfile docker/php-cli
+
+      - name: Run composer install and artisan migrate --pretend (inside container)
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/app -w /app wop-php-cli bash -lc "composer install --no-interaction --prefer-dist --no-scripts || true && php -v && php -d auto_prepend_file= -r 'echo "php-cli ok\n";' && php artisan migrate --pretend || true"
+
+      - name: Composer outdated (direct deps)
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/app -w /app wop-php-cli bash -lc "composer install --no-interaction --prefer-dist --no-scripts || true; composer outdated --direct || true"
+
+      - name: Composer audit (security advisories)
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/app -w /app wop-php-cli bash -lc "composer install --no-interaction --prefer-dist --no-scripts || true; composer audit --format=table || true"
+
+      - name: Lint PHP files (syntax check)
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/app -w /app wop-php-cli bash -lc "find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 -P4 php -d auto_prepend_file= -l || true"

@@ -1,0 +1,53 @@
+[
+  {"standard":"ISIC","code":"A","name":"Agriculture, forestry and fishing","children":[
+    {"code":"01","name":"Crop and animal production, hunting and related service activities"},
+    {"code":"02","name":"Forestry and logging"},
+    {"code":"03","name":"Fishing and aquaculture"}
+  ]},
+  {"standard":"ISIC","code":"B","name":"Mining and quarrying","children":[
+    {"code":"05","name":"Mining of coal and lignite"},
+    {"code":"07","name":"Mining of metal ores"},
+    {"code":"08","name":"Other mining and quarrying"}
+  ]},
+  {"standard":"ISIC","code":"C","name":"Manufacturing","children":[
+    {"code":"10","name":"Manufacture of food products"},
+    {"code":"13","name":"Manufacture of textiles"},
+    {"code":"20","name":"Manufacture of chemicals and chemical products"},
+    {"code":"26","name":"Manufacture of computer, electronic and optical products"}
+  ]},
+  {"standard":"ISIC","code":"D","name":"Electricity, gas, steam and air conditioning supply","children":[
+    {"code":"35","name":"Electric power generation, transmission and distribution"}
+  ]},
+  {"standard":"ISIC","code":"E","name":"Water supply; sewerage, waste management and remediation activities","children":[
+    {"code":"36","name":"Water collection, treatment and supply"},
+    {"code":"37","name":"Sewerage"},
+    {"code":"38","name":"Waste collection, treatment and disposal activities; materials recovery"}
+  ]},
+  {"standard":"ISIC","code":"F","name":"Construction","children":[
+    {"code":"41","name":"Construction of buildings"},
+    {"code":"42","name":"Civil engineering"},
+    {"code":"43","name":"Specialized construction activities"}
+  ]},
+  {"standard":"ISIC","code":"G","name":"Wholesale and retail trade; repair of motor vehicles and motorcycles","children":[
+    {"code":"45","name":"Wholesale and retail trade and repair of motor vehicles and motorcycles"},
+    {"code":"46","name":"Wholesale trade, except of motor vehicles and motorcycles"},
+    {"code":"47","name":"Retail trade, except of motor vehicles and motorcycles"}
+  ]},
+  {"standard":"ISIC","code":"H","name":"Transportation and storage","children":[
+    {"code":"49","name":"Land transport and transport via pipelines"},
+    {"code":"50","name":"Water transport"},
+    {"code":"51","name":"Air transport"},
+    {"code":"52","name":"Warehousing and support activities for transportation"}
+  ]},
+  {"standard":"ISIC","code":"J","name":"Information and communication","children":[
+    {"code":"58","name":"Publishing activities"},
+    {"code":"60","name":"Programming and broadcasting activities"},
+    {"code":"62","name":"Computer programming, consultancy and related activities"},
+    {"code":"63","name":"Information service activities"}
+  ]},
+  {"standard":"ISIC","code":"K","name":"Financial and insurance activities","children":[
+    {"code":"64","name":"Financial service activities, except insurance and pension funding"},
+    {"code":"65","name":"Insurance, reinsurance and pension funding, except compulsory social security"},
+    {"code":"66","name":"Activities auxiliary to financial service and insurance activities"}
+  ]}
+]
