@@ -1,0 +1,14 @@
+[
+  {"name":"United States","iso2":"US","iso3":"USA","phone_code":"+1","region":"Americas","states":[{"name":"California","code":"CA","cities":["Los Angeles","San Francisco"]},{"name":"New York","code":"NY","cities":["New York","Buffalo"]}]},
+  {"name":"Canada","iso2":"CA","iso3":"CAN","phone_code":"+1","region":"Americas","states":[{"name":"Ontario","code":"ON","cities":["Toronto","Ottawa"]},{"name":"British Columbia","code":"BC","cities":["Vancouver","Victoria"]}]},
+  {"name":"United Kingdom","iso2":"GB","iso3":"GBR","phone_code":"+44","region":"Europe","states":[{"name":"England","code":"ENG","cities":["London","Manchester"]},{"name":"Scotland","code":"SCT","cities":["Edinburgh","Glasgow"]}]},
+  {"name":"India","iso2":"IN","iso3":"IND","phone_code":"+91","region":"Asia","states":[{"name":"Maharashtra","code":"MH","cities":["Mumbai","Pune"]},{"name":"Karnataka","code":"KA","cities":["Bengaluru","Mysuru"]}]},
+  {"name":"China","iso2":"CN","iso3":"CHN","phone_code":"+86","region":"Asia","states":[{"name":"Guangdong","code":"GD","cities":["Guangzhou","Shenzhen"]},{"name":"Beijing","code":"BJ","cities":["Beijing","Changping"]}]},
+  {"name":"France","iso2":"FR","iso3":"FRA","phone_code":"+33","region":"Europe","states":[{"name":"Île-de-France","code":"IDF","cities":["Paris","Versailles"]},{"name":"Provence-Alpes-Côte d'Azur","code":"PACA","cities":["Marseille","Nice"]}]},
+  {"name":"Germany","iso2":"DE","iso3":"DEU","phone_code":"+49","region":"Europe","states":[{"name":"Bavaria","code":"BY","cities":["Munich","Nuremberg"]},{"name":"Berlin","code":"BE","cities":["Berlin","Pankow"]}]},
+  {"name":"Japan","iso2":"JP","iso3":"JPN","phone_code":"+81","region":"Asia","states":[{"name":"Tokyo","code":"TK","cities":["Tokyo","Hachioji"]},{"name":"Osaka","code":"OS","cities":["Osaka","Sakai"]}]},
+  {"name":"Australia","iso2":"AU","iso3":"AUS","phone_code":"+61","region":"Oceania","states":[{"name":"New South Wales","code":"NSW","cities":["Sydney","Newcastle"]},{"name":"Victoria","code":"VIC","cities":["Melbourne","Geelong"]}]},
+  {"name":"United Arab Emirates","iso2":"AE","iso3":"ARE","phone_code":"+971","region":"Middle East","states":[{"name":"Dubai","code":"DXB","cities":["Dubai","Jebel Ali"]},{"name":"Abu Dhabi","code":"AUH","cities":["Abu Dhabi","Al Ain"]}]},
+  {"name":"Saudi Arabia","iso2":"SA","iso3":"SAU","phone_code":"+966","region":"Middle East","states":[{"name":"Riyadh","code":"RD","cities":["Riyadh","Al Kharj"]},{"name":"Makkah","code":"MK","cities":["Jeddah","Mecca"]}]},
+  {"name":"Brazil","iso2":"BR","iso3":"BRA","phone_code":"+55","region":"Americas","states":[{"name":"São Paulo","code":"SP","cities":["São Paulo","Campinas"]},{"name":"Rio de Janeiro","code":"RJ","cities":["Rio de Janeiro","Niterói"]}]}
+]
